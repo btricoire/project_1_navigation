@@ -17,7 +17,7 @@ class QNetwork(nn.Module):
         """
         super(QNetwork, self).__init__()
         self.seed = torch.manual_seed(seed)
-        self.fc = []
+        self.fc = nn.ModuleList()
         prev_unit = state_size
         for i, units in enumerate(layers_units):
             self.fc.append(nn.Linear(prev_unit, units))
