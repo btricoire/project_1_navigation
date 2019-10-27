@@ -90,11 +90,11 @@ Regarding the results, we choose to keep the following values :
 
 Given our distribution of hyper-parameters, we get the following results :
 
-![final result](final_curve.png)
+![Score vs iteration - final agent](final_curve.png){ width=70% }
 
 Plotting every 100 iterations the average score over the 100 previous iterations induces a less noisy plot :
 
-![final_curve_averaged_100](final_curve_averaged_100.png)
+![Score vs iteration, averaged over the last 100 iterations](final_curve_averaged_100.png){ width=70% }
 
 Our agent get an average score higher than 13 between the 500th and 600th iterations. Then it continues to improve until reaching a plateau around score 17 after 1000 iterations. The next iterations, between 1000 and 5000 are not necessary since our agent is not improving anymore.
 
@@ -112,5 +112,5 @@ As discussed in the course, a significant number of DQN extensions have been int
 
 ### Refine hyper-parameters tuning
 
-We proposed a very naive approach to find our distribution of hyper parameters. The litterature is full of more structurated approaches to achieve such this task (Grid search, ). Some Python library propose high level frameworks (for instance Scikit Learn) for common approaches (Grid search, Random search, etc.).
+We proposed a naive approach to find our distribution of hyper parameters. The litterature is full of more structurated approaches to achieve such this task (Grid search, ). Some Python library propose high level frameworks (for instance Scikit Learn) for common approaches (Grid search, Random search, etc.).
 

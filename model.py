@@ -26,7 +26,6 @@ class QNetwork(nn.Module):
         self.fc_final = nn.Linear(prev_unit, action_size)
 
     def forward(self, state):
-        """Build a network that maps state -> action values."""
         x = state
         for fct_cur in self.fc:
             x = F.relu(fct_cur(x))
