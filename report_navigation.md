@@ -103,5 +103,5 @@ As discussed in the course, a significant number of DQN extensions have been int
 
 ### Refine hyper-parameters tuning
 
-We proposed a naive approach to find our distribution of hyper parameters. The litterature is full of more structurated approaches to achieve such this task (Grid search, ). Some Python library propose high level frameworks (for instance Scikit Learn) for common approaches (Grid search, Random search, etc.).
+We proposed a naive approach to find our distribution of hyper parameters. The litterature is full of more structurated approaches to achieve such this task (Grid search, Random search, etc.). Some Python libraries propose high level frameworks (for instance Scikit Learn) for common approaches (Grid search, Random search, etc.).
 
