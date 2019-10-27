@@ -81,11 +81,11 @@ Regarding the results, we choose to keep the following values :
 
 Given our distribution of hyper-parameters, we get the following results :
 
-![Score vs iteration - final agent](final_curve.png){ width=70% }
+![Score vs iteration - final agent](final_curve.png)
 
 Plotting every 100 iterations the average score over the 100 previous iterations induces a less noisy plot :
 
-![Score vs iteration, averaged over the last 100 iterations](final_curve_averaged_100.png){ width=70% }
+![Score vs iteration, averaged over the last 100 iterations](final_curve_averaged_100.png)
 
 Our agent get an average score higher than 13 between the 500th and 600th iterations. Then it continues to improve until reaching a plateau around score 17 after 1000 iterations. The next iterations, between 1000 and 5000 are not necessary since our agent is not improving anymore.
 
