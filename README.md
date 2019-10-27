@@ -4,7 +4,7 @@
 
 # Project 1: Navigation
 
-### Introduction
+## Introduction
 
 For this project, you will train an agent to navigate (and collect bananas!) in a large, square world.  
 
@@ -34,22 +34,25 @@ The task is episodic, and in order to solve the environment, your agent must get
 
 2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
 
-### Instructions
+## Python Environment
 
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
+We advise using a Python 3.6 environment with all the libraries requierement described in the Github repository [udacity/deep-reinforcement-learning](https://github.com/udacity/deep-reinforcement-learning). In addition, to get nice and interactive (zoomable) curves, we used Bokeh and Holoview libraries.
 
-### (Optional) Challenge: Learning from Pixels
+## Running the code
 
-After you have successfully completed the project, if you're looking for an additional challenge, you have come to the right place!  In the project, your agent learned from information such as its velocity, along with ray-based perception of objects around its forward direction.  A more challenging task would be to learn directly from pixels!
+Our project contains two Notebooks:
+- **Navigation** : This Notebook contains:
+    - the main routine (dqn) for the training of the agent,
+    - the adjustments of the hyper parameters,
+    - the display of the score of the trained agent (final and during training). 
+- **Curves (hyper parameters setting and final results)**: this notebook plots:
+    -  the results of the tuning of hyper parameters,
+    - the final score.
 
-To solve this harder task, you'll need to download a new Unity environment.  This environment is almost identical to the project environment, where the only difference is that the state is an 84 x 84 RGB image, corresponding to the agent's first-person view.  (**Note**: Udacity students should not submit a project with this new environment.)
+Our code contains two Python modules :
 
-You need only select the environment that matches your operating system:
-- Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Linux.zip)
-- Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana.app.zip)
-- Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Windows_x86.zip)
-- Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/VisualBanana_Windows_x86_64.zip)
+- **dqn_agent.py** : This module contains the deep reinforcement learning agent.
+- **model.py**: this module describes the PyTorch neural network. Note that contrary to the base implementation we derived, the number of layers and their size is parameterizable.
 
-Then, place the file in the `p1_navigation/` folder in the DRLND GitHub repository, and unzip (or decompress) the file.  Next, open `Navigation_Pixels.ipynb` and follow the instructions to learn how to use the Python API to control the agent.
 
-(_For AWS_) If you'd like to train the agent on AWS, you must follow the instructions to [set up X Server](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md), and then download the environment for the **Linux** operating system above.
+We choosed to separate the two notebooks because the second one contains additional dependencies (Holoviews and Bokeh) used to generate nice and interactive plots.

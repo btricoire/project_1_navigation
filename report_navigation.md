@@ -18,16 +18,7 @@ The banana collector task is episodic, and in order to solve the environment, ou
 
 As part of the Deep Reinforcement Learning course, this project reuses the source code offer by the course. Especially, it is derived from the following DQN implementation : [dqn/solution](https://github.com/udacity/deep-reinforcement-learning/tree/master/dqn/solution). The agent has been trained locally using PyTorch with Cuda involving an *Intel core i7 7700HQ*, *16Gb RAM* and a *Nvidia GP107* GPU.
 
-Our project contains two Notebooks:
-- **Navigation** : This Notebook contains:
-    - the main routine (dqn) for the training of the agent,
-    - the adjustments of the hyper parameters,
-    - the display of the score of the trained agent (final and during training). 
-- **Curves (hyper parameters setting and final results)**: this notebook plots:
-    -  the results of the tuning of hyper parameters,
-    - the final score.
 
-We choosed to separate the two notebooks because the second one contains additional dependencies (Holoviews and Bokeh) used to generate nice and interactive plots.
 
 ## Solution
 
